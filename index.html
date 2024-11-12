@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card" id="form-card">
+        <div class="card-content">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form novalidate id="form">
+            <div class="input-wrapper">
+              <div class="label-wrapper">
+                <label for="email">Email address</label>
+                <span aria-live="polite" id="email-error"></span>
+              </div>
+              <input
+                id="email"
+                name="email"
+                email="email"
+                placeholder="email@company.com"
+              />
+            </div>
+            <button>Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          class="mobile-card-art"
+          alt=""
+        />
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          class="desktop-card-art"
+          alt=""
+        />
+      </div>
+      <div class="success-card" id="success-card">
+        <div>
+          <img src="./assets/images/icon-success.svg" alt="" />
+          <h1>Thanks for subscribing!</h1>
+          <p id="success-msg"></p>
+        </div>
+        <div>
+          <button type="button" id="dismiss">Dismiss message</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://yene-link.com/biruk" target="_blank">Biruk Megersa</a>.
+      </div>
+    </footer>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
